@@ -1,42 +1,31 @@
-cmake_minimum_required(VERSION 3.16)
-project(Lab01 VERSION 1.0.0 LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.10)
+project(OOP_MAI_207)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_library(lab1_lib
-    src/gcd.cpp
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror=uninitialized")
+
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG v1.15.0
+  TLS_VERIFY false
 )
-target_include_directories(lab1_lib
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
 
-add_executable(lab1_app
-    src/main.cpp
-)
-target_link_libraries(lab1_app PRIVATE lab1_lib)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
-include(CTest)
-if (BUILD_TESTING)
-  include(FetchContent)
-  set(INSTALL_GTEST OFF)
-  set(BUILD_GMOCK OFF)
-  set(BUILD_GTEST ON)
+include_directories(include)
+add_library(lab_lib src/gcd.cpp)
 
-  FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
-  )
-  FetchContent_MakeAvailable(googletest)
+add_executable(main main.cpp)
+target_link_libraries(main lab_lib)
 
-  add_executable(lab1_tests
-      tests/gcd_tests.cpp
-  )
-  target_link_libraries(lab1_tests PRIVATE lab1_lib GTest::gtest_main)
-
-  include(GoogleTest)
-  gtest_discover_tests(lab1_tests)
-endif()
-
-message(STATUS "Build configuration complete")
+enable_testing()
+add_executable(lab_tests tests/test.cpp)
+target_link_libraries(lab_tests lab_lib gtest_main)
+add_test(NAME lab_tests COMMAND lab_tests)

@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc liblab1_lib.a CMakeFiles/lab1_lib.dir/src/gcd.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib liblab1_lib.a
