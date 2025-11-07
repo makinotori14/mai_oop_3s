@@ -1,0 +1,111 @@
+Start testing: Nov 07 20:17 MSK
+----------------------------------------------------------
+1/4 Testing: Gcd.Basic
+1/4 Test: Gcd.Basic
+Command: "/Users/albert/workspace/mai_oop_3s/lab1/build/lab1_tests" "--gtest_filter=Gcd.Basic" "--gtest_also_run_disabled_tests"
+Directory: /Users/albert/workspace/mai_oop_3s/lab1/build
+"Gcd.Basic" start time: Nov 07 20:17 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/albert/workspace/mai_oop_3s/lab1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Gcd.Basic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Gcd
+[ RUN      ] Gcd.Basic
+[       OK ] Gcd.Basic (0 ms)
+[----------] 1 test from Gcd (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Gcd.Basic" end time: Nov 07 20:17 MSK
+"Gcd.Basic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: Gcd.WithZero
+2/4 Test: Gcd.WithZero
+Command: "/Users/albert/workspace/mai_oop_3s/lab1/build/lab1_tests" "--gtest_filter=Gcd.WithZero" "--gtest_also_run_disabled_tests"
+Directory: /Users/albert/workspace/mai_oop_3s/lab1/build
+"Gcd.WithZero" start time: Nov 07 20:17 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/albert/workspace/mai_oop_3s/lab1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Gcd.WithZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Gcd
+[ RUN      ] Gcd.WithZero
+[       OK ] Gcd.WithZero (0 ms)
+[----------] 1 test from Gcd (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Gcd.WithZero" end time: Nov 07 20:17 MSK
+"Gcd.WithZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: Gcd.Negatives
+3/4 Test: Gcd.Negatives
+Command: "/Users/albert/workspace/mai_oop_3s/lab1/build/lab1_tests" "--gtest_filter=Gcd.Negatives" "--gtest_also_run_disabled_tests"
+Directory: /Users/albert/workspace/mai_oop_3s/lab1/build
+"Gcd.Negatives" start time: Nov 07 20:17 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/albert/workspace/mai_oop_3s/lab1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Gcd.Negatives
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Gcd
+[ RUN      ] Gcd.Negatives
+[       OK ] Gcd.Negatives (0 ms)
+[----------] 1 test from Gcd (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Gcd.Negatives" end time: Nov 07 20:17 MSK
+"Gcd.Negatives" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: Gcd.Symmetry
+4/4 Test: Gcd.Symmetry
+Command: "/Users/albert/workspace/mai_oop_3s/lab1/build/lab1_tests" "--gtest_filter=Gcd.Symmetry" "--gtest_also_run_disabled_tests"
+Directory: /Users/albert/workspace/mai_oop_3s/lab1/build
+"Gcd.Symmetry" start time: Nov 07 20:17 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/albert/workspace/mai_oop_3s/lab1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Gcd.Symmetry
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Gcd
+[ RUN      ] Gcd.Symmetry
+[       OK ] Gcd.Symmetry (0 ms)
+[----------] 1 test from Gcd (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Gcd.Symmetry" end time: Nov 07 20:17 MSK
+"Gcd.Symmetry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 07 20:17 MSK
