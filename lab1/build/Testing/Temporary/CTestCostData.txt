@@ -1,5 +1,0 @@
-Gcd.Basic 3 0.00185861
-Gcd.WithZero 3 0.00179042
-Gcd.Negatives 3 0.00153471
-Gcd.Symmetry 3 0.00151674
----
